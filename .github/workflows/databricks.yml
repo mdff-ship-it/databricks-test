@@ -24,5 +24,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: databricks/setup-cli@main
-      - name: databricks workspace list
+      - name: databricks workspace list matthew.duffy@liberty-it.co.uk
         run: databricks workspace list
