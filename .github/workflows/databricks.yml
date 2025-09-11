@@ -27,4 +27,4 @@ jobs:
       - name: databricks workspace list
         run: databricks workspace list /
       - name: databricks repos create
-        run: databricks repos create https://github.com/mdff-ship-it/databricks-test.git --path /Repos/mduffy-databricks-test
+        run: databricks repos create https://github.com/mdff-ship-it/databricks-test.git --path /Workspace/Users/matthew.duffy@liberty-it.co.uk/mduffy-databricks-test
