@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: databricks/setup-cli@main
       - name: databricks workspace list
-        run: databricks workspace list /
+        run: databricks workspace list /Repos
       - name: databricks repos create
         run: databricks repos create https://github.com/mdff-ship-it/databricks-test.git --path /Repos/mduffy-databricks-test
       - name: databricks repos list
