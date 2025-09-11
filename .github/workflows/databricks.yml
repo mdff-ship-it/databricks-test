@@ -24,5 +24,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: databricks/setup-cli@main
-      - name: databricks workspace ls
-        run: databricks workspace ls
+      - name: databricks workspace list
+        run: databricks workspace list
