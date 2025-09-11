@@ -26,6 +26,8 @@ jobs:
       - uses: databricks/setup-cli@main
       - name: databricks workspace list
         run: databricks workspace list /
+      - name: databricks repos create
+        run: databricks repos create https://github.com/mdff-ship-it/databricks-test.git --path /Workspace/Repos/mduffy-databricks-test
       - name: databricks repos list
         run: databricks repos list
       # - name: databricks repos create
