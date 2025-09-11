@@ -24,6 +24,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: databricks/setup-cli@main
-      - name: Update git folder
-        # Set your workspace path and branch name here
-        run: databricks clusters list
+      - name: databricks repos list
+        run: databricks repos list
