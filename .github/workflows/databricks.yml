@@ -15,7 +15,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: 'Update git folder'
+    name: 'Data'
     environment: Prod
     env:
       DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
@@ -24,5 +24,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: databricks/setup-cli@main
-      - name: databricks experiments list-experiments
-        run: databricks experiments list
+      - name: databricks workspace ls
+        run: databricks workspace ls
